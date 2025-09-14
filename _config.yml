@@ -1,0 +1,41 @@
+title: Simorq-Home
+author: 
+ name: Rahman Mohammadpour
+ email:  rahmanmohammadpour@gmail.com
+
+affiliation: Institute of Mathematics of Polish Academy of Sciences
+
+description: >
+# Build settings
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+plugins:
+  - jekyll-scholar
+
+scholar:
+  style: apa  # Change this to another style if needed
+  locale: en
+  bibliography: "bibliography.bib" # Make sure this file exists in your Jekyll root
+  bibliography_list_tag: ul  # To use <ul> instead of default <ol>
+  sort_by: year
+  order: ascending
+  bibliography_template: bib
+
+include:
+  - _static
+
+
+header_pages:
+#  - index.md
+  - finsidsat.md
+  - publication.md
+  - notes.md
+  - slides.md
+
+
+minima:
+  skin: classic
